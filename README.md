@@ -14,7 +14,7 @@ Use GitHub's template feature to make a copy of this repository by clicking the 
 
 Alternatively shallow clone the repository matching your plugin name:
 ```
-git clone --depth 1 https://github.com/mattermost/mattermost-plugin-starter-template com.example.my-plugin
+git clone --depth 1 https://github.com/mattermost/mattermost-plugin-starter-template ru.blocksy.lk
 ```
 
 Note that this project uses [Go modules](https://github.com/golang/go/wiki/Modules). Be sure to locate the project outside of `$GOPATH`.
@@ -23,7 +23,7 @@ Edit the following files:
 1. `plugin.json` with your `id`, `name`, and `description`:
 ```json
 {
-    "id": "com.example.my-plugin",
+    "id": "ru.blocksy.lk",
     "name": "My Plugin",
     "description": "A plugin to enhance Mattermost."
 }
@@ -31,7 +31,7 @@ Edit the following files:
 
 2. `go.mod` with your Go module path, following the `<hosting-site>/<repository>/<module>` convention:
 ```
-module github.com/example/my-plugin
+module github.ru.blocksy.lk
 ```
 
 3. `.golangci.yml` with your Go module path:
@@ -39,7 +39,7 @@ module github.com/example/my-plugin
 linters-settings:
   # [...]
   goimports:
-    local-prefixes: github.com/example/my-plugin
+    local-prefixes: github.ru.blocksy.lk
 ```
 
 Build your plugin:
@@ -50,7 +50,7 @@ make
 This will produce a single plugin file (with support for multiple architectures) for upload to your Mattermost server:
 
 ```
-dist/com.example.my-plugin.tar.gz
+dist/ru.blocksy.lk.tar.gz
 ```
 
 ## Development
